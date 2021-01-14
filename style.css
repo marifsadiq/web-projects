@@ -13,14 +13,13 @@
   box-sizing: inherit;
 }
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   min-height: 100vh;
   background-color: #dfdbe5;
   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23610de7' fill-opacity='0.2'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   overflow-x: hidden;
 }
 h1 {
-  font-family: 'Roboto Mono', sans-serif;
   letter-spacing: 4px;
   text-align: center;
   text-transform: uppercase;
@@ -113,7 +112,6 @@ h1 {
   margin: 0.5em 0;
 }
 .box .info {
-  font-family: 'Roboto Mono', sans-serif;
   font-size: 1.2rem;
   text-align: center;
   border-radius: 0 0 0.4em 0.4em;
@@ -126,6 +124,7 @@ h1 {
   z-index: 3;
 }
 footer {
+  font-family: 'Handlee', sans-serif;
   margin-top: 3em;
   height: 10vh;
   background: #5bc4f1; /* fallback for old browsers */
