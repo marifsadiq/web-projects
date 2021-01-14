@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  box-sizing: border-box;
+  font-size: calc(1em + 1vw);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+.container {
+  width: 60%;
+  height: 90vh;
+  text-align: center;
+  /* background-color: lightpink; */
+  padding: 1em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  transition: all 0.75s ease-out;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: wheat;
+  padding: 3em 0.5em;
+  width: 250px;
+  height: 60%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4), 0 6px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 0.5em;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  position: relative;
+  margin-bottom: 1em;
+}
+.circle {
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to right,
+    rgba(234, 34, 155, 0.7),
+    rgba(9, 177, 340, 0.6)
+  );
+}
+img.logo {
+  transition: all 0.75s ease-out;
+  width: 6em;
+  position: absolute;
+  top: 0;
+}
+h2.title {
+  transition: all 0.75s ease-out;
+  /* padding: 1em 0; */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: red;
+}
+h3.specs {
+  transition: all 0.75s ease-out;
+  font-size: 0.9rem;
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1em;
+}
+.btns button {
+  width: 2.5em;
+  border: none;
+  background-color: transparent;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+button.active {
+  background-color: lightgrey;
+}
+.purchase {
+  width: 100%;
+}
+.purchase button {
+  width: 90%;
+  height: 3em;
+  border: none;
+  background-color: transparent;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}

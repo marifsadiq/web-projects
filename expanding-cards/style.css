@@ -1,0 +1,55 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  padding: 2em 1em;
+  overflow: hidden;
+}
+.panel {
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 1em;
+  border-radius: 3.5em;
+  overflow: hidden;
+  position: relative;
+  margin: 0.3em;
+  flex-grow: 0.5;
+  transition: all 0.7s ease-in-out;
+}
+.panel.active {
+  flex-grow: 5;
+}
+.panel h3 {
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 1.3em;
+  left: 1.3em;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+.panel.panel.active h3 {
+  opacity: 1;
+}
+
+@media (max-width: 570px) {
+  .panel {
+    width: 0.7em;
+    height: 50vh;
+  }
+
+  .panel:nth-of-type(6) {
+    display: none;
+  }
+}

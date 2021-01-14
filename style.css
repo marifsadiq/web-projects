@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Roboto+Mono:wght@700&display=swap');
+
+:root {
+  box-sizing: border-box;
+  --b-radius: 0.4em;
+  --box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+*,
+::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  background-color: #dfdbe5;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23610de7' fill-opacity='0.2'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  overflow-x: hidden;
+}
+h1 {
+  font-family: 'Roboto Mono', sans-serif;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 75vw;
+  margin: 1em auto;
+  padding: 1em 0;
+  font-size: 3.5rem;
+  font-weight: 900;
+  border: 6px dotted rgba(28, 110, 164, 0.92);
+  color: #ffffff;
+  background: #ffffff;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5,
+    -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5,
+    -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+  color: #ffffff;
+  background: #ffffff;
+  background-color: #dfdbe5;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23d0c5e2' fill-opacity='0.47' fill-rule='evenodd'/%3E%3C/svg%3E");
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+.container {
+  margin: 0 auto;
+  padding: 1em;
+  width: 90vw;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+}
+.box {
+  font-family: 'Handlee', sans-serif;
+  height: 15em;
+  background: #5bc4f1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #61b1d3,
+    #468296,
+    #32667a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4294b8,
+    #336e81,
+    #2f647a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: var(--b-radius);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  z-index: 1;
+}
+.box::after {
+  content: '';
+  width: 100%;
+  height: 0%;
+  border-radius: var(--b-radius);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #242038;
+  z-index: 2;
+  transition: height 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.box:hover::after {
+  height: 100%;
+}
+.box > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  padding: 1em;
+  text-decoration: none;
+  border-radius: var(--b-radius);
+  color: #242038;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  transition: color 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.box:hover a {
+  color: #cac4ce;
+}
+.icon {
+  font-size: 3rem;
+  margin: 0.5em 0;
+}
+.box .info {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 0 0 0.4em 0.4em;
+  height: 20%;
+  width: 100%;
+  padding-top: 0.5em;
+  background-color: #242038;
+  color: #cac4ce;
+  position: relative;
+  z-index: 3;
+}
+footer {
+  margin-top: 3em;
+  height: 10vh;
+  background: #5bc4f1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #61b1d3,
+    #468296,
+    #32667a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4294b8,
+    #336e81,
+    #2f647a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+footer h3 {
+  text-align: center;
+  padding-top: 1.5em;
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}

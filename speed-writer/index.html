@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href=":&base64" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Speed Typer</title>
+  </head>
+  <body>
+    <header id="settings-bar">
+      <form id="form">
+        <label for="difficulty-level">Difficulty Level</label>
+        <select id="difficulty-level">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </form>
+    </header>
+    <div class="container">
+      <h2>SPEED TYPER</h2>
+      <p>Type following in text box</p>
+      <h1 id="word"></h1>
+      <input
+        type="text"
+        id="text"
+        autocomplete="off"
+        placeholder="Type text here..."
+      />
+      <div class="score-container">Score: <span id="score">0</span></div>
+      <div class="time-container">Time left: <span id="time">10s</span></div>
+    </div>
+    <div class="end-game-container" id="end-game"></div>
+    <button class="settings-btn" id="settings-btn">⚙️</button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

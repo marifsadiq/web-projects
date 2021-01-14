@@ -1,0 +1,177 @@
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: calc(0.5em + 1vw);
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #f1b57f;
+}
+
+label, input {
+  display: block;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 10vh;
+  bottom: 10vh;
+  left: 10vw;
+  right: 10vw;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 0.8em;
+  overflow: hidden;
+  -webkit-box-shadow: 6px 6px 20px black;
+          box-shadow: 6px 6px 20px black;
+}
+
+.container .login {
+  width: 50%;
+  height: 100%;
+  background-image: url("../beach-wave.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 3.0em;
+}
+
+.container .login h2 {
+  padding-bottom: 2em;
+}
+
+.container .login button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 1.5em;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.container .signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: pink;
+  padding-top: 1.5em;
+}
+
+.container .signup h2 {
+  text-align: center;
+}
+
+.container .signup form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 70%;
+  padding-left: 3em;
+}
+
+.container .signup form input {
+  margin-bottom: 1em;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: pink;
+  padding: 0.5em 0 0.5em 0.5em;
+  font-size: 0.7rem;
+}
+
+.container .signup form input:focus {
+  outline: none;
+}
+
+.container .signup div {
+  text-align: center;
+  width: 100%;
+}
+
+.container .signup div button {
+  padding: 0.5em 4em;
+  border: none;
+  border-radius: 1.5em;
+  background-color: red;
+  font-size: 1rem;
+  color: white;
+}
+
+.container .signup p {
+  text-align: center;
+  padding-top: 1.3em;
+}
+
+.container .signup ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.container .signup ul li {
+  display: block;
+  padding: 1em 2em;
+  margin-top: 1em;
+  border-radius: 0.5em;
+}
+
+.container .signup ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container .login {
+    width: 100%;
+    height: 30%;
+  }
+  .container .signup {
+    width: 100%;
+    height: 70%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

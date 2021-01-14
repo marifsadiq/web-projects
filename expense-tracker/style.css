@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #efe9f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+h2 {
+  margin-bottom: 1em;
+}
+.container {
+  width: 22em;
+}
+.container > * {
+  margin: 0.5em 0;
+}
+.balance div {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.inc-exp-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #fff;
+  padding: 1.2em 3em;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+.income {
+  border-right: 1px solid #484d6d;
+  padding-right: 3em;
+}
+.income > div {
+  font-size: 1.3rem;
+  color: #57a773;
+}
+.expense > div {
+  font-size: 1.3rem;
+  color: #ee6352;
+}
+.history-container {
+  padding: 0.5em 0;
+}
+.history-container h3 {
+  border-bottom: 1px solid #484d6d;
+  padding-bottom: 0.4em;
+}
+.history-list {
+  list-style-type: none;
+  padding: 0.5em 0;
+}
+.history-list > li {
+  font-size: 1.1rem;
+  padding: 0.6em;
+  margin: 0.3em 0;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.history-list > li.income {
+  border-right: 5px solid #57a773;
+}
+.history-list > li.expense {
+  border-right: 5px solid #ee6352;
+}
+.history-list .delete-btn {
+  cursor: pointer;
+  position: absolute;
+  left: -1.8em;
+  background-color: #ee6352;
+  color: #fff;
+  padding: 0.6em;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.history-list > li:hover .delete-btn {
+  opacity: 1;
+}
+.transaction-container h3 {
+  border-bottom: 1px solid #484d6d;
+  padding-bottom: 0.4em;
+}
+.form {
+  padding: 0.6em 0;
+}
+.form label,
+.form input[type='text'],
+.form input[type='number'] {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.form label {
+  font-size: 1rem;
+}
+.form input {
+  width: 100%;
+  height: 2.5em;
+  border: 1px solid #b2b5ce;
+  border-radius: 0.2em;
+  font-size: 1rem;
+  padding: 0 0.5em;
+}
+.form input:focus {
+  outline: none;
+  border: 2px solid #484d6d;
+}
+.form button {
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.6em 2em;
+  font-size: 1.1rem;
+  width: 100%;
+  background-color: #08b2e3;
+  color: #fff;
+  border: none;
+  border-radius: 0.2em;
+  margin-top: 0.3em;
+}
+.form button:focus {
+  outline: none;
+}

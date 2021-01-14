@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliding Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./images/lll.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        src="https://randomuser.me/api/portraits/thumb/men/50.jpg"
+        alt="user"
+      />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+      <h1>Here you are!</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+        modi. Quod ea earum sunt ex quia ipsum dicta libero fuga deleniti nisi.
+      </p>
+      <div>
+        <button id="open">Sign Up</button>
+      </div>
+    </header>
+    <section>
+      <h2>Our Services</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas vitae
+        quos quasi, fugiat incidunt totam, dolorem quas minima ullam dolores
+        odit qui amet. Impedit numquam magni atque iste labore quo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        consectetur?
+      </p>
+    </section>
+    <section>
+      <h2>Benefits</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
+        vitae.
+      </p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem, ipsum.</li>
+        <li>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque,
+          aliquam?
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>About Us</h2>
+      <ul>
+        <li>Number one</li>
+        <li>Number two</li>
+        <li>Number three</li>
+      </ul>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas vitae
+        quos quasi, fugiat incidunt totam, dolorem quas minima ullam dolores
+        odit qui amet. Impedit numquam magni atque iste labore quo.
+      </p>
+    </section>
+    <div class="modal-container" id="modal-container">
+      <div class="modal">
+        <div class="modal-head">
+          <h3>Sign Up</h3>
+          <div id="close"><i class="fa fa-times fa-2x"></i></div>
+        </div>
+        <div class="modal-body">
+          <input type="text" placeholder="Enter user name" />
+          <input type="email" placeholder="Enter valid email" />
+          <input type="password" placeholder="Enter password" />
+          <input type="password" placeholder="Confirm password" />
+        </div>
+        <input type="submit" value="Submit" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@800&display=swap');
+
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-size: calc(0.5em + 1vw);
+  --border-1px: 1px solid #dedede;
+  --primary-color: #2d2013;
+  --secondary-color: #dedede;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: 'Lato', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 1em;
+}
+.container h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+form {
+  margin: 1.5em 0;
+}
+form input[type='text'] {
+  border: var(--border-1px);
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+  padding: 0.3em 0.6em;
+  width: 15em;
+  font-size: 1.2rem;
+}
+.btn {
+  border: var(--border-1px);
+  cursor: pointer;
+  padding: 0.3em 0.6em;
+  font-size: 1.2rem;
+}
+form .search-btn {
+  border-left: 0;
+  border-top-right-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+}
+.random-btn {
+  margin-left: 0.6em;
+  border-radius: 0.3em;
+  border-radius: 0.3em;
+}
+form input[type='text']:focus,
+.search-btn:focus,
+.random-btn:focus {
+  outline: none;
+}
+.meals {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+  gap: 1.5em;
+  margin-top: 1.5em;
+  justify-content: center;
+  padding: 2em;
+}
+.meal {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+.meal img {
+  width: 100%;
+  height: 100%;
+  border: 4px solid var(--secondary-color);
+  border-radius: 0.2em;
+}
+
+.meal-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  padding: 0.5em;
+}
+.meal:hover .meal-info {
+  opacity: 1;
+}
+.meal-info h4 {
+  pointer-events: none;
+}
+.recipe-container {
+  padding: 3em;
+  overflow: auto;
+}
+.recipe-container h2 {
+  margin: 1.5em;
+  text-align: center;
+}
+.image-container {
+  width: 50%;
+  margin: 0 auto;
+}
+.image-container img {
+  width: 100%;
+}
+
+.recipe-info {
+  border: 2px dashed orange;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.instructions {
+  padding: 2em;
+}
+.instructions p {
+  text-align: justify;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 1.6;
+}
+.ingredients {
+  padding: 1em;
+  list-style-type: none;
+  text-align: center;
+}
+.ingredients li {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  margin: 0.2em;
+  padding: 0.2em 0.5em;
+  border-radius: 0.8em;
+}
