@@ -50,7 +50,6 @@ h1 {
   gap: 1em;
 }
 .box {
-  font-family: 'Handlee', sans-serif;
   height: 15em;
   background: #5bc4f1; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -87,6 +86,7 @@ h1 {
   height: 100%;
 }
 .box > a {
+  font-family: 'Handlee', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,6 +126,7 @@ h1 {
 footer {
   font-family: 'Handlee', sans-serif;
   margin-top: 3em;
+  padding: 0.75em;
   height: 10vh;
   background: #5bc4f1; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -141,9 +142,10 @@ footer {
     #2f647a
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-footer h3 {
+footer h3,
+footer p {
   text-align: center;
-  padding-top: 1.5em;
+  font-weight: 600;
 }
 @media (max-width: 700px) {
   h1 {
