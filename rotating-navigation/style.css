@@ -24,6 +24,7 @@ body {
 .container.show-nav {
   transform: rotate(-20deg);
 }
+
 main {
   margin: 0 auto;
   max-width: 1080px;
