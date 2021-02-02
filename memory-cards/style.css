@@ -19,14 +19,13 @@ body {
   background-color: #fff;
   width: 90vw;
   max-width: 600px;
-  margin: 5em auto;
+  margin: 3em auto;
   perspective: 1000px;
 }
 .container header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   padding: 2em 0;
 }
@@ -38,7 +37,7 @@ body {
 .btn {
   cursor: pointer;
   font-size: inherit;
-  padding: 0.5em 1em;
+  padding: 0.5em 0.8em;
   background-color: inherit;
   border: 1px solid #aaa;
 }
@@ -49,7 +48,7 @@ body {
 section.cards-container {
   position: relative;
   width: 100%;
-  height: 45vh;
+  height: 250px;
 }
 .card {
   position: absolute;
