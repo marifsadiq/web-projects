@@ -1,0 +1,48 @@
+@import url("https://www.googleapis.com/css?family=Muli&display=swap")
+
+:root{
+  box-sizing: border-box;
+}
+
+*,*::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body{
+  background-color: #dedede;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Muli', sans serif;
+}
+.display-code{
+  display: flex;
+
+}
+.display-code .key-box{
+  margin: 0.5em;
+  width: 6em;
+  position: relative;
+  cursor: pointer;
+}
+.key-box{
+ background-color: #fff; 
+ border: 1px solid #000;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 1em;
+ font-weight: bold;
+}
+.key-box small{
+  color: #555;
+  position: absolute;
+  top: -1.55555em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}

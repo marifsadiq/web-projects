@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
+
+:root {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3em;
+  background-image: linear-gradient(to right, rgba(0, 255, 0), rgba(255, 0, 0));
+}
+h1,
+h2,
+h3 {
+  margin: 1em;
+}
+.select-bg input {
+  margin: 0.3em 0.5em;
+}
